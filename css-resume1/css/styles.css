@@ -1,0 +1,181 @@
+/*Color Palette
+#596979 Cool Grey
+#a5a5a5 Light Grey
+#0292cf Blue
+#69c6ee Sky Blue
+#ffffff White
+*/
+
+
+/* Global styles
+-------------------------*/
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+h1, h2 {
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 400;
+}
+h1 {
+	font-size: 40px;
+}
+h2 {
+	font-size: 30px;
+	margin-top: 0;
+}
+h3 {
+	margin: 0;
+}
+a {
+	color: #69c6ee;
+}
+a:hover {
+	text-decoration: none;
+}
+.content-wrap {
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 60px 50px;
+	overflow: auto;
+}
+/*.col-narrow {
+	width: 30%;
+	float: left;
+	min-height: 175px;
+}
+.col-wide {
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	min-height: 175px;
+	/*margin: 25px;*/
+}*/
+.uppercase {
+	text-transform: uppercase;
+}
+.btn {
+	text-decoration: none;
+	background: black;
+	color: white;
+	padding: 10px;
+	display: inline-block;
+}
+
+/* Header and Footer
+-------------------------*/
+header, footer {
+	background: #596979;
+	color: #a5a5a5;
+}
+/* header */
+header {
+	padding-top: 50px;
+	position: relative;
+}
+.profile-img {
+	/*width: 300px;*/
+	border-radius: 50%;
+	/*float: left;
+	margin-right: 30px;*/
+	margin-top: 40px;
+}
+header h1, header h2 {
+	color: black;
+	/*margin: 0;*/
+}
+header p {
+	margin-top: 50px;
+}
+.download {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+/* footer */
+footer {
+	text-align: center;
+}
+.contact-info a {
+	padding: 10px;
+	display: inline-block;
+}
+
+
+/* Navigation
+-------------------------*/
+nav {
+	text-align: center;
+	background: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	/*left: 0;
+	right: 0;*/
+	/*Same fuction*/
+}
+nav a {
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: black;
+}
+
+
+/* My Works
+-------------------------*/
+.work {
+	background: #a5a5a5;
+}
+h3 ~ p {
+	margin: 0;
+}
+
+
+/* Education
+-------------------------*/
+.education {
+	/*background: #0292cf*/
+	background: linear-gradient(rgba(2, 146, 207, 0.8), rgba(2, 146, 207, 0.5)),
+	url(../images/car.jpg) no-repeat fixed;
+	background-size: cover;
+}
+p + h3 {
+	margin-top: 30px;
+}
+/* Media Queries
+-------------------------*/
+@media (min-width: 900px) {
+	.col-narrow {
+	width: 30%;
+	float: left;
+	min-height: 175px;
+	}
+	.col-wide {
+		width: 70%;
+		float: left;
+		padding-left: 20px;
+		min-height: 175px;
+		/*margin: 25px;*/
+	}
+}
+@media (max-width: 899px) {
+	header {
+		text-align: center;
+	}
+	.profile-img {
+		width: 200px;
+	}
+}
+
