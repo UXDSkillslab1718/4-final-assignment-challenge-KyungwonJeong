@@ -21,8 +21,9 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <div class="content-wrap">    
+        <div class="content-wrap">
         <img class="profile-img col-narrow" src="images/Kyungwon.jpg" alt="Kyungwon Jeong">
+        <!-- REVIEW: images should always contain the title attribute, and use the figure tag around it for semantic HTML5 -->
             <div class="col-wide">
                 <h1>Kyungwon Jeong</h1>
                 <h2>Automotive & Product Design Student</h2>
@@ -30,9 +31,9 @@
             </div>
         </div>
     </header>
-    
 
-    <main> 
+
+    <main>
         <!-- // Work Experience -->
         <section id="work" class="work">
             <div class="content-wrap">
@@ -44,6 +45,7 @@
                 <p class="uppercase">Renewal the logo of Hyundai 'N' based on CMF research[Team]</p>
                 <p>March 2017 - June 2017</p>
                 <div class="scale"><img src="images/cen.jpg" width="90%" height="90%"><br></div>
+                <!-- REVIEW: use the figure tag with a class, so you can set the size with CSS. This is inline styling andis not allowed -->
                 <div class="scale"><img src="images/ca.jpg" width="90%" height="90%"><br></div>
                 <iframe width="800" height="450" src="https://www.youtube.com/embed/ezjxqNjMGN0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
@@ -89,9 +91,9 @@
                 <h3>Web Design</h3>
                 <p class="uppercase"> HCR: Hague Car Rental sevice website[Individual]</p>
                 <p>Sept 2018 - Nov 2018</p>
-                <div class="scale"><img src="images/lab.jpg""width="300px" height="300px"><br></div>
-                <div class="scale"><img src="images/lab1.jpg""width="300px" height="300px"><br></div>
-                <div class="scale"><img src="images/lab2.jpg""width="300px" height="300px"><br></div>
+                <div class="scale"><img src="images/lab.jpg" width="300px" height="300px"><br></div> <!-- REVIEW: Codefix, removed " -->
+                <div class="scale"><img src="images/lab1.jpg" width="300px" height="300px"><br></div><!-- REVIEW: Codefix, removed " -->
+                <div class="scale"><img src="images/lab2.jpg" width="300px" height="300px"><br></div><!-- REVIEW: Codefix, removed " -->
             </div>
 
              <div class="col-wide">
@@ -105,7 +107,7 @@
 
 
         </div>
-                
+
         </section>
 
 
@@ -118,7 +120,7 @@
             <h3>Claude Watson Secondary Arts - Toronto, ON</h3>
             <p>Visual Arts Major, 2010-2012</p>
             <p>Find more at <a href="http://earlhaig.ca/departments/claude/site/admission.php" target="_blank">CWSA Website</a>.</p>
-            
+
             <h3>University of Seoul - Seoul, South Korea</h3>
             <p>Industrial Design Major, 2016-Present</p>
             <p>Double Major in teaching profession</p>
@@ -130,13 +132,13 @@
            </div>
         </section>
     </main>
-    
+
     <!-- // Footer & contact info -->
     <footer id="contact">
         <div class="content-wrap">
 
         <h2>Contact Info</h2>
-        
+
         <!-- Social media and contact links. Add or remove any networks. -->
         <div class="contact-info">
             <a href="mailto:jnsd200@naver.com">jnsd200@naver.com</a>
